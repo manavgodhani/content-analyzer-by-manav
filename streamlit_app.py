@@ -1,3 +1,22 @@
+import re
+import streamlit as st
+import nltk
+from bs4 import BeautifulSoup
+import requests
+from urllib.parse import urlparse
+import pandas as pd
+from collections import Counter
+import plotly.express as px
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
+from textstat import flesch_reading_ease
+import nltk
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
+import time
+import numpy as np
+import json
+
 # Sample HTML content for testing
 SAMPLE_HTML_OPTIONS = {
     "E-commerce Product Page": """
